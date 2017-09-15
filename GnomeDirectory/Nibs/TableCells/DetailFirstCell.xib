@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="215" id="osc-K6-mQb" customClass="DetailFirstCell" customModule="GnomeDirectory" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="osc-K6-mQb" id="12x-u5-St0">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nfS-6M-Ax8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="150" id="2a4-Dv-Qgo"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="German Mendoza" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TMf-NG-BlS">
+                        <rect key="frame" x="8" y="158" width="359" height="23.5"/>
+                        <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XE6-wp-X48">
+                        <rect key="frame" x="335" y="110" width="40" height="40"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="expanded" translatesAutoresizingMaskIntoConstraints="NO" id="aWH-We-6W0">
+                                <rect key="frame" x="10" y="10" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="S2J-Qg-ruk"/>
+                                    <constraint firstAttribute="width" constant="20" id="tZc-lK-GFd"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A9Y-gy-YSf">
+                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                <connections>
+                                    <action selector="tappedExpandedButton:" destination="osc-K6-mQb" eventType="touchUpInside" id="NUS-Zu-ptt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="aWH-We-6W0" firstAttribute="top" secondItem="XE6-wp-X48" secondAttribute="top" constant="10" id="01v-Vp-nht"/>
+                            <constraint firstItem="aWH-We-6W0" firstAttribute="leading" secondItem="XE6-wp-X48" secondAttribute="leading" constant="10" id="Hpr-XO-EFz"/>
+                            <constraint firstItem="A9Y-gy-YSf" firstAttribute="leading" secondItem="XE6-wp-X48" secondAttribute="leading" id="Jzz-if-yj6"/>
+                            <constraint firstAttribute="height" constant="40" id="V1c-Ge-7U7"/>
+                            <constraint firstItem="A9Y-gy-YSf" firstAttribute="top" secondItem="XE6-wp-X48" secondAttribute="top" id="ilx-d6-V4i"/>
+                            <constraint firstAttribute="width" constant="40" id="kfm-Yb-Hf7"/>
+                            <constraint firstAttribute="trailing" secondItem="A9Y-gy-YSf" secondAttribute="trailing" id="t4f-I5-zvX"/>
+                            <constraint firstAttribute="bottom" secondItem="A9Y-gy-YSf" secondAttribute="bottom" id="vPM-dB-g46"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="nfS-6M-Ax8" firstAttribute="top" secondItem="12x-u5-St0" secondAttribute="top" id="99N-vU-eTy"/>
+                    <constraint firstItem="XE6-wp-X48" firstAttribute="bottom" secondItem="nfS-6M-Ax8" secondAttribute="bottom" id="B7v-W8-hvw"/>
+                    <constraint firstItem="TMf-NG-BlS" firstAttribute="trailing" secondItem="12x-u5-St0" secondAttribute="trailingMargin" id="D0g-xv-nxk"/>
+                    <constraint firstAttribute="trailing" secondItem="nfS-6M-Ax8" secondAttribute="trailing" id="Nmk-Ux-ekP"/>
+                    <constraint firstItem="TMf-NG-BlS" firstAttribute="leading" secondItem="12x-u5-St0" secondAttribute="leadingMargin" id="OME-rw-Hiq"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="XE6-wp-X48" secondAttribute="trailing" constant="-8" id="VW6-nn-lYf"/>
+                    <constraint firstItem="TMf-NG-BlS" firstAttribute="top" secondItem="nfS-6M-Ax8" secondAttribute="bottom" constant="8" id="lz3-8i-D1y"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="TMf-NG-BlS" secondAttribute="bottom" constant="10" id="upT-ci-5WF"/>
+                    <constraint firstItem="nfS-6M-Ax8" firstAttribute="leading" secondItem="12x-u5-St0" secondAttribute="leading" id="wwO-0P-9dt"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="nameLabel" destination="TMf-NG-BlS" id="YJI-aL-hdf"/>
+                <outlet property="profileImageView" destination="nfS-6M-Ax8" id="ZRB-Mc-2ny"/>
+            </connections>
+            <point key="canvasLocation" x="-230.5" y="39.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="expanded" width="50" height="50"/>
+    </resources>
+</document>

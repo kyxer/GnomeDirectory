@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="up6-F4-vZF" customClass="LoadingCell" customModule="GnomeDirectory" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="up6-F4-vZF" id="wfk-eo-hye">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vr3-Y9-kvp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="LHp-Zc-aEP">
+                                <rect key="frame" x="177" y="11" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LHp-Zc-aEP" firstAttribute="centerX" secondItem="vr3-Y9-kvp" secondAttribute="centerX" id="K1s-sb-U57"/>
+                            <constraint firstItem="LHp-Zc-aEP" firstAttribute="centerY" secondItem="vr3-Y9-kvp" secondAttribute="centerY" id="P6t-xe-uoI"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="vr3-Y9-kvp" secondAttribute="bottom" id="STG-et-Du4"/>
+                    <constraint firstAttribute="trailing" secondItem="vr3-Y9-kvp" secondAttribute="trailing" id="cma-YV-5GP"/>
+                    <constraint firstItem="vr3-Y9-kvp" firstAttribute="top" secondItem="wfk-eo-hye" secondAttribute="top" id="hrU-Nf-RJZ"/>
+                    <constraint firstItem="vr3-Y9-kvp" firstAttribute="leading" secondItem="wfk-eo-hye" secondAttribute="leading" id="xsY-yd-KSe"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="activityIndicator" destination="LHp-Zc-aEP" id="Ub3-A5-ngs"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

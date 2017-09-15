@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="61" id="VR6-iK-fGI" customClass="GnomeCell" customModule="GnomeDirectory" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VR6-iK-fGI" id="5dp-MT-d7v">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tobus Quickwhistle" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l9Z-Db-0mj">
+                        <rect key="frame" x="8" y="8" width="351" height="21"/>
+                        <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="18"/>
+                        <color key="textColor" red="0.18431372549019609" green="0.18431372549019609" blue="0.18431372549019609" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cFf-NJ-2v7">
+                        <rect key="frame" x="8" y="37" width="359" height="18.5"/>
+                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="16"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="l9Z-Db-0mj" firstAttribute="leading" secondItem="5dp-MT-d7v" secondAttribute="leadingMargin" id="3ef-Gi-XpH"/>
+                    <constraint firstItem="cFf-NJ-2v7" firstAttribute="leading" secondItem="5dp-MT-d7v" secondAttribute="leading" constant="8" id="4Tl-6M-N37"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="l9Z-Db-0mj" secondAttribute="trailing" constant="8" id="As8-Xe-ZU6"/>
+                    <constraint firstAttribute="trailing" secondItem="cFf-NJ-2v7" secondAttribute="trailing" constant="8" id="S12-pW-sBr"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="cFf-NJ-2v7" secondAttribute="bottom" constant="0.5" id="S4e-Id-868"/>
+                    <constraint firstItem="cFf-NJ-2v7" firstAttribute="top" secondItem="l9Z-Db-0mj" secondAttribute="bottom" constant="8" id="kAM-m3-mKp"/>
+                    <constraint firstItem="l9Z-Db-0mj" firstAttribute="top" secondItem="5dp-MT-d7v" secondAttribute="topMargin" id="nje-zx-K1u"/>
+                </constraints>
+            </tableViewCellContentView>
+            <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="detailLabel" destination="cFf-NJ-2v7" id="kDv-p3-pLg"/>
+                <outlet property="nameLabel" destination="l9Z-Db-0mj" id="vFw-Bt-ZAx"/>
+            </connections>
+            <point key="canvasLocation" x="57.5" y="210.5"/>
+        </tableViewCell>
+    </objects>
+</document>
