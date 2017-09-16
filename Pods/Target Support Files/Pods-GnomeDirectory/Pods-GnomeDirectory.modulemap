@@ -1,0 +1,6 @@
+framework module Pods_GnomeDirectory {
+  umbrella header "Pods-GnomeDirectory-umbrella.h"
+
+  export *
+  module * { export * }
+}
